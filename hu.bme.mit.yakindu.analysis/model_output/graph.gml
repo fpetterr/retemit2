@@ -566,7 +566,7 @@ graph
 				text	"
 	specification = null
 	namespace = null
-	name = TrapState
+	name = Trap
 	documentation = 
 	orthogonal = false
 	simple = true
@@ -609,7 +609,7 @@ graph
 				text	"
 	specification = null
 	namespace = null
-	name = SecondTrap...
+	name = trapSecond
 	documentation = 
 	orthogonal = false
 	simple = true
@@ -1151,7 +1151,7 @@ graph
 	edge
 	[
 		source	10
-		target	15
+		target	16
 		graphics
 		[
 			fill	"#000000"
@@ -1401,7 +1401,7 @@ graph
 	edge
 	[
 		source	14
-		target	16
+		target	15
 		graphics
 		[
 			fill	"#000000"
@@ -1458,7 +1458,7 @@ graph
 	edge
 	[
 		source	15
-		target	10
+		target	14
 		graphics
 		[
 			fill	"#000000"
@@ -1496,7 +1496,7 @@ graph
 	edge
 	[
 		source	16
-		target	14
+		target	10
 		graphics
 		[
 			fill	"#000000"

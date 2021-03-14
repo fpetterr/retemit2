@@ -33,9 +33,10 @@ public class Main {
 		State previousStat = null;
 		while (iterator.hasNext()) {
 			EObject content = iterator.next();
-			EObject transit = content;
+			//EObject trans = content;
 			if(content instanceof Transition) {
-				System.out.println(((Transition)content).getSource().getName() + " -> " + ((Transition)content).getTarget().getName());
+				Transition tr = (Transition)content;
+				System.out.println(tr.getSource().getName() +"->"+tr.getTarget().getName());
 			}else if(content instanceof State) {
 				
 				State currentState = (State)content;
@@ -51,7 +52,7 @@ public class Main {
 					System.out.println("Found a trap: " + currentState.getName());
 				}
 				
-				if(currentState.getName().equals("empty") || currentState.getName().equals("")) {
+				if(currentState.getName().equals("empty")) {
 					Random rand = new Random();
 					int newNameInt = rand.nextInt(100);
 					currentState.setName("SuggestedName" + newNameInt);
