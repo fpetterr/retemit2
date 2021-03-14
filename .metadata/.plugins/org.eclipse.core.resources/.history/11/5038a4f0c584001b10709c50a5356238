@@ -17,10 +17,12 @@ public class RunStatechart {
 		s.setTimer(new TimerService());
 		RuntimeService.getInstance().registerStatemachine(s, 200);
 
+		Scanner inputScan = new Scanner(System.in);
+		
 		s.init();
 		s.enter();
 		s.runCycle();
-		Scanner inputScan = new Scanner(System.in);
+		
 		while(true) {
 			String readCommand = inputScan.nextLine();
 			switch(readCommand) {
